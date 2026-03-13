@@ -70,3 +70,19 @@ img{
 #b3{
     margin-top: -200px;
 }
+a:link{
+    font-weight: bold;
+    color: purple;
+    text-shadow: .5px .5px 0px black;
+    text-decoration-line: none;
+}
+a:visited{
+   color:rgb(80, 80, 80);
+}
+a:hover{
+    color:rgb(80, 0, 0);
+    text-decoration-line: underline;
+}
+a:active{
+    color: rgb(0, 0, 0);
+}
