@@ -1,72 +1,65 @@
 body{
     background-color:rgb(252, 185, 176);
     color: rgb(43, 0, 11);
+    line-height: 1.6;
+    margin:0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#container{
+    width:1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
     background-color: rgb(250, 206, 206);
     text-align: center;
     padding: 20px;
+    margin:0;
 }
 h2{
-    font-size: 2em;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 20px;
 }
 h3{
-  font-size: 1.5em;
+  margin-top: 30px;
+}
+.section {
+    margin-bottom: 40px;
 }
 p{
-    margin-inline-start: 15px;
     font-size: 1.2em;
     background-color: rgb(255, 214, 228);
-    padding: 10px;
-    width: 50%;
-    border-radius: 45px;
-    border: 3px solid rgb(104, 104, 104);
-    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid rgb(104, 104, 104);
 }
-img{
-    margin-left: 750px;
-    width: 50%;
-    position:relative;
-    bottom: 265px;
-    border-radius: 60px;
-   border: 3px solid rgb(90, 90, 90);
+.highlight {
+    background-color: rgb(255, 200, 200);
 }
-#sidebar1{
- width: 700px;
-    padding: 20px;
+.bold{
+    font-weight:bold;
 }
-#sidebar img {
-    max-width: 100%;
-    height: auto;
+.underline {
+    text-decoration: underline;
+}
+img-left {
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.img-right {
+    float:right;
+    width:40%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.section::after {
+    content: "";
     display: block;
-}
-#s2{
-    width: 700px;
-    padding: 20px;
-}
-#s2 img{
-    max-width: 100%;
-    height: 300px;
-    display:block;
-  margin-top: -60px;
-}
-#s3{
-     width: 700px;
-    padding: 20px;
-}
-#s3 img{
-    max-width: 100%;
-    height: 300px;
-    display:block;
-  margin-top: -35px;
-}
-#b2{
-    margin-top: -250px;
-}
-#b3{
-    margin-top: -200px;
+    clear:both;
 }
 a:link{
     font-weight: bold;
@@ -84,8 +77,40 @@ a:hover{
 a:active{
     color: rgb(0, 0, 0);
 }
-#container{
-    max-width: 1400px;
-    min-width: 600px;
-    margin:auto;
+.info {
+    padding: 20px;
+    margin-top:40px;
+    border:2px dashed black;
+    text-align: center;
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+    #container {
+        width: 900px;
+    }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+    #container {
+        width: 700px;
+    }
+
+    .img-left, .img-right {
+        width: 50%;
+    }
+}
+
+/* 768px (mobile) */
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+
+    .img-left, .img-right {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
 }
