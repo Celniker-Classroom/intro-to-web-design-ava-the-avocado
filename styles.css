@@ -56,10 +56,32 @@ img-left {
     margin-bottom: 10px;
     border-radius: 20px;
 }
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+p {
+    transition: transform 0.2s ease;
+}
+
+p:hover {
+    transform: translateY(-5px);
+}
 .section::after {
     content: "";
     display: block;
     clear:both;
+}
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 a:link{
     font-weight: bold;
